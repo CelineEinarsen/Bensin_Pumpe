@@ -15,11 +15,23 @@ function LiterRegning(){
 
     if (isNaN(Liter)){
 //hvis input ikke er tall, skriv feil melding
-        document.querySelector("#utskrift").innerHTML = "Vennligst skriv inn et tall";
+        document.querySelector("#utskrift").innerHTML = "Vennligst skriv inn et tall.";
 
     }
 
-    else if(Sum){
+    else if (Liter > 80){
+//Hvis input er større en 80, skriv feilmelding
+        document.querySelector("#utskrift").innerHTML = "Tanken din rommer ikke så mye.";
+
+    }
+
+    else if (Liter < 5){
+//Hvis input er mindre enn 5, skriv feilmelding
+        document.querySelector("#utskrift").innerHTML = "Vi selger ikke så små kvanta bensin.";
+
+    }
+
+    else {
 //hvis input er tall, regn ut.
         document.querySelector("#utskrift").innerHTML = "Du må betale " + Sum + "kr, for " + Liter + " liter bensin.";
 
