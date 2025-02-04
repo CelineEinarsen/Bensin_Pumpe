@@ -26,4 +26,3 @@ function LiterRegning(){
     }
 //Avslutt funksjon
 }
-LiterRegning();
